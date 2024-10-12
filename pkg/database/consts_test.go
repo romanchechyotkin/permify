@@ -12,18 +12,22 @@ func TestConsts(t *testing.T) {
 		result string
 	}{
 		{
-			name:   "postgres",
+			name:   POSTGRES,
 			result: "postgres",
 		},
 		{
-			name:   "memory",
+			name:   MYSQL,
+			result: "mysql",
+		},
+		{
+			name:   MEMORY,
 			result: "memory",
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name.String(), func(t *testing.T) {
-			assert.Equal(t, tt.result, tt.result)
+			assert.Equal(t, tt.name.String(), tt.result)
 		})
 	}
 }
