@@ -17,7 +17,7 @@ import (
 // conf: the configuration object containing the necessary information to create a database connection.
 //
 //	It should have the following properties:
-//	- Engine: the type of the database, e.g., POSTGRES or MEMORY
+//	- Engine: the type of the database, e.g., POSTGRES, MYSQL or MEMORY
 //	- URI: the connection string for the database (only required for some database engines, e.g., POSTGRES)
 //	- MaxOpenConnections: the maximum number of open connections to the database
 //	- MaxIdleConnections: the maximum number of idle connections in the connection pool

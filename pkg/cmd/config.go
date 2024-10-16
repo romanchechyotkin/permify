@@ -83,7 +83,7 @@ func NewConfigCommand() *cobra.Command {
 	f.Int("service-permission-concurrency-limit", conf.Service.Permission.ConcurrencyLimit, "concurrency limit")
 	f.Int64("service-permission-cache-number-of-counters", conf.Service.Permission.Cache.NumberOfCounters, "permission service cache number of counters")
 	f.String("service-permission-cache-max-cost", conf.Service.Permission.Cache.MaxCost, "permission service cache max cost")
-	f.String("database-engine", conf.Database.Engine, "data source. e.g. postgres, memory")
+	f.String("database-engine", conf.Database.Engine, "data source. e.g. postgres, mysql, memory")
 	f.String("database-uri", conf.Database.URI, "uri of your data source to store relation tuples and schema")
 	f.String("database-writer-uri", conf.Database.Writer.URI, "writer uri of your data source to store relation tuples and schema")
 	f.String("database-reader-uri", conf.Database.Reader.URI, "reader uri of your data source to store relation tuples and schema")

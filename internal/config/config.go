@@ -158,7 +158,7 @@ type (
 
 	// Database contains configuration for the database.
 	Database struct {
-		Engine string `mapstructure:"engine"` // Database engine type (e.g., "postgres" or "memory")
+		Engine string `mapstructure:"engine"` // Database engine type (e.g., "postgres" or "mysql" or "memory")
 		URI    string `mapstructure:"uri"`    // Database connection URI
 		Writer struct {
 			URI string `mapstructure:"uri"`
